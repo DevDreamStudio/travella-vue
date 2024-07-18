@@ -1,0 +1,56 @@
+@import url(./reset.scss);
+@import url(./fonts.scss);
+@import url(./root.css);
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1325px;
+}
+
+body {
+    background: #F1F1F1;
+}
+
+.fade-router-enter-active,
+.fade-router-leave-active {
+    transition: opacity 0.5s;
+}
+
+.fade-router-enter,
+.fade-router-leave-to {
+    opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.8s;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.before-bg {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(0, 0, 0, .4);
+    border-radius: 50px;
+}
+
+.press-effect {
+    transition: .5s linear;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(.98);
+    }
+
+    &:active {
+        transform: scale(.95);
+    }
+}
